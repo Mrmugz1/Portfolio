@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: rgb(10, 10, 25);
+    padding: 0 60px;
+}
+
+.mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.ham {
+    visibility: hidden;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 500px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 39, 43);
+}
+
+.start {
+    display: flex;
+}
+
+.header-image {
+    background-image: url("assets/desktop-header-image.PNG");
+    width: 100%;
+    height: 58%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.one {
+    display: flex;
+    justify-content: space-evenly;
+    width: 729.6px;
+    padding: 20px 0;
+}
+
+.one h1 {
+    font-size: 3.5em;
+    line-height: 46px;
+    width: 50%;
+}
+
+.one p {
+    font-size: 1.05em;
+}
+
+.more {
+    height: 40px;
+    width: 140px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(147, 73, 73);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.more a {
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.right {
+    background-color: rgb(10, 10, 25);
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.right span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.right h2 {
+    color: orange;
+    font-size: 2.3em;
+}
+
+.right h3 {
+    font-size: 1.6em;
+}
+
+.right p {
+    font-size: 1.3em;
+}
+
+.line {
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.end {
+    display: flex;
+    margin-top: 50px;
+}
+
+.end1 {
+    display: flex;
+}
+
+.three {
+    margin-left: 15px;
+}
+
+.numb {
+    font-size: 2em;
+    font-weight: 900;
+    color: rgb(142, 142, 134);
+}
+
+/* For Mobile View  */
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .ham {
+        visibility: visible;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 40px;
+    }
+
+    .ham div {
+        height: 5px;
+        width: 100%;
+        background-color: rgb(10, 10, 25);
+    }
+
+    .header-image {
+        background-image: url("assets/mobile-header-image.PNG");
+        width: 73vw;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .start {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one h1 {
+        font-size: 3em;
+        width: 60%;
+    }
+
+    .one p {
+        padding: 20px 0;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    .end {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .end1 {
+        margin-bottom: 15px;
+    }
+
+    .three {
+        margin-left: 25px;
+    }
+
+    .numb {
+        font-size: 1.5em
+    }
+
+    .three p {
+        max-width: 220px;
+    }
+
+    .right span {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30em;
+    }
+}
